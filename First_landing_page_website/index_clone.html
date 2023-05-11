@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Freak Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Balsamiq Sans', cursive;
+            background: url(img/bg.jpg);
+            background-size: 100%;
+            margin: 0px;
+            padding: 0px;
+            color: aliceblue;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            left: 60px;
+            top: 20px;
+            position: absolute;
+        }
+
+        .left img {
+            width: 128px;
+            filter: invert(100%);
+            border-radius: 10px;
+            margin-left: 9px;
+        }
+
+        .left h2 {
+            line-height: 0;
+            margin-top: 8px;
+            margin-bottom: 10px;
+            text-align: center;
+            /* font-size: xx-large; */
+        }
+
+        .mid {
+            /* border: 2px solid yellow; */
+            width: 37%;
+            margin: 12px auto;
+            /* display: inline-block; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            margin: 15px 20px;
+            padding: 4px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 22px;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            color: rgb(106, 109, 111);
+            text-decoration: underline;
+        }
+
+        .right {
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            right: 50px;
+            top: 20px;
+        }
+
+        .btn {
+            background-color: black;
+            color: aliceblue;
+            margin: 24px 5px;
+            padding: 4px 14px;
+            border-radius: 10px;
+            border: 1px solid gray;
+            cursor: pointer;
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 18px;
+        }
+
+        .btn:hover {
+            background-color: rgb(71, 72, 73);
+        }
+
+        .container {
+            border: 2px solid white;
+            display: inline-block;
+            position: absolute;
+            right: 110px;
+            width: 33%;
+            margin: 100px 40px;
+            padding: 40px 50px;
+            border-radius: 10px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 37px;
+            margin-bottom: 40px;
+
+        }
+
+        .container input {
+            display: block;
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 25px;
+            margin: 15px auto;
+            padding: 7px 60px;
+            border: 2px solid green;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .container button {
+            background-color: black;
+            color: aliceblue;
+            display: block;
+            margin: 30px auto;
+            padding: 7px 30px;
+            border-radius: 10px;
+            border: 1px solid gray;
+            cursor: pointer;
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 20px;
+        }
+
+        .container button:hover {
+            background-color: rgb(71, 72, 73);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hearder">
+        <div class="left">
+            <img src="/First_landing_page_website/img/logo.jpg" alt="">
+            <h2>Fitness Freak</h2>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"">Home</a></li>
+                <li><a href=" #">Instructor</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym in Delhi now!!</h1>
+        <input type="text" name="" placeholder="Enter your Name">
+        <input type="text" name="" placeholder="Enter your Age">
+        <input type="text" name="" placeholder="Enter your Gender">
+        <input type="text" name="" placeholder="Enter your Locality">
+        <input type="text" name="" placeholder="Enter your Phone Number">
+        <input type="text" name="" placeholder="Enter your Email Id">
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>
