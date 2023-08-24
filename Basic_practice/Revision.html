@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Revise</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid rgb(249, 171, 171);
+            background-color: antiquewhite;
+            height: 3300px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+        #box1{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+        #box2{
+            position: sticky;
+            top: 3px;
+        }
+        #box3{
+            position: relative;
+            top:20px;
+            left: 20px;
+        }
+        #box4{
+            position: fixed;
+            right: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

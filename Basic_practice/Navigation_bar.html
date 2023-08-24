@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            color-scheme: dark;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        div {
+            background-color: #1f2937;
+            padding: 30px;
+            margin: -8px;
+        }
+
+        #heading {
+            color: #d8b4fe;
+            font-size: x-large;
+            cursor: pointer;
+            /* padding-left: 10px; */
+            margin-left: 20px;
+            float: left;
+            align-self: auto;
+            margin-top: 4px;
+        }
+
+        /* #navbar-content {} */
+
+        li {
+            list-style: none;
+            /* margin-left: 50px; */
+            /* padding-left: 20px; */
+        }
+
+        .item {
+            padding-left: 600px;
+            margin-top: -60px;
+        }
+
+        .tabs {
+            text-decoration: none;
+            list-style: none;
+            float: left;
+            padding: 10px;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: lighter;
+            font-style: normal;
+            /* display: inline-block; */
+            position: relative;
+        }
+
+        .tabs::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1.5px;
+            bottom: 0;
+            left: 0;
+            background-color: #6b10c6;
+            transform-origin: bottom ;
+            transition: transform 0.25s ease-out;
+        }
+
+        .tabs:hover::after {
+            transform: scaleX(0.75);
+            transform-origin: bottom ;
+        }
+
+        hr {
+            clear: both;
+            border-top: 0px solid rgba(255, 248, 248, 0.416);
+            text-align: justify;
+            margin: -10px;
+            padding-top: 1px;
+        }
+
+        .buttons {
+            float: right;
+            margin-top: -27px;
+            margin-right: 15px;
+            margin-left: 5px;
+            padding: 11px;
+            text-align: justify;
+            background-color: #b468ff;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .buttons:hover {
+            background-color: #6b10c6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Navbar">
+        <h2 id="heading">CodePlayground</h2>
+        <ul class="navbar-content">
+            <div class="item">
+                <li><a class="tabs" href="#">Home</a></li>
+                <li><a class="tabs" href="#">Courses</a></li>
+                <li><a class="tabs" href="#">Tutorial</a></li>
+                <li><a class="tabs" href="#">Blog</a></li>
+                <li><a class="tabs" href="#">Notes</a></li>
+                <li><a class="tabs" href="#">Contact</a></li>
+                <li><a class="tabs" href="#">My Gear</a></li>
+                <li><a class="tabs" href="#">Work With Us</a></li>
+            </div>
+        </ul>
+        <button class="buttons">Signup</button>
+        <button class="buttons">Login</button>
+    </div>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymWebsite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* CSS Reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url(bg.jpg);
+        color: white;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .left{
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+    .left img{
+        width: 90px;
+        margin: auto;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+        line-height: 15px;
+        font-size: 20px;
+    }
+    .mid{
+        /* border: 2px solid rgb(150, 128, 128); */
+        display: block;
+        width: 40%;
+        margin: 29px auto;
+    }
+    .right{
+        position: absolute;
+        top: 43px;
+        right: 25px;
+        /* border: 2px solid rgb(67, 230, 48); */
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(179, 177, 177);
+    }
+    .btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .btn:hover{
+        background-color: #504c4c;
+    }
+    .container{
+        border: 2px solid rgb(255, 255, 255);
+        margin: 100px 85px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 20px;
+    }
+    .form-group input{
+        font-family: 'Balsamiq Sans', cursive;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        margin: 25px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>Fitness Freak</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Instructors</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Bst Gym of Delhi now!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
